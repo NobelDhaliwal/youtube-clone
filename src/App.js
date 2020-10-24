@@ -1,26 +1,40 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Header from "./Components/Header.jsx";
+import Sidebar from "./Components/Sidebar.jsx";
+import RecommendedVideos from "./Components/RecommendedVideos.jsx";
+import "./App.css";
+import SearchPage from "./Components/SearchPage.jsx";
+import {Switch,Route,BrowserRouter as Router} from "react-router-dom";
 
-function App() {
+const App =()=> {
   return (
+    <>
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+     <Router>
+     <Header/>
+       <Switch>
+        <Route path="/search/:searchTerm">
+        <div className="App_page">
+       {/* <Sidebar/> */}
+      <SearchPage/> 
+        </div>
+        </Route>
+
+        <Route path="/">
+        <div className="App_page">
+       <Sidebar/>
+      <RecommendedVideos/> 
+        </div>
+       </Route>
+       </Switch>
+       </Router>
+   {/* <Header/>
+    <div className="App_page">
+  <Sidebar/>
+  <RecommendedVideos/>  */}
+   </div>
+    </>
   );
-}
+};
 
 export default App;

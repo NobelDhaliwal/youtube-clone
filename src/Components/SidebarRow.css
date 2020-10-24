@@ -1,0 +1,41 @@
+.sidebarRow {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+}
+.sidebarR_icon {
+color:#606060;
+font-size: large !important;
+}
+.sidebarR_title {
+    /* we want title to take as much as room as possible */
+    flex:1;
+    margin-left: 20px;
+    font-size: 12px;
+    font-weight: 500;
+}
+.sidebarRow:hover {
+    background-color: lightgray;
+    cursor: pointer;
+}
+/* icons are font basically */
+.sidebarRow:hover > .sidebarR_icon {
+    color:red;
+
+}
+.sidebarRow:hover > .sidebarR_title {
+    font-weight: bold;
+}
+.sidebarRow.selected > .sidebarR_icon {
+    color: red;
+}
+.sidebarRow.selected > .sidebarR_title {
+    font-weight: bold;
+}
+@media (max-width:768px) {
+    .sidebarRow{
+        margin-top: 5px;
+        margin-bottom: 15px;
+
+    }
+ }

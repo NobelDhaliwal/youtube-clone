@@ -1,0 +1,18 @@
+.sidebar {
+    /* We want our sidebar to take 20% of the container.0.2 means 20% and 1 means 100% */
+    flex:0.2; 
+}
+.sidebar > hr {
+    height: 1px;
+    border:0;
+    background-color: lightgray;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+@media (max-width:768px) {
+   .sidebar{
+    flex:0.1;
+    margin-top:50px;
+   }
+  
+}
