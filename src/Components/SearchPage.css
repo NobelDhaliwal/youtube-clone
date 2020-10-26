@@ -19,16 +19,15 @@ background-color: lightgray;
 margin-top: 10px;
 margin-bottom: 10px;
 }
-@media (min-width:200px) and (max-width:500px) {
+@media (min-width:280px) and (max-width:768px) {
     .searchPage {
-        flex: 0.8;
+        flex: 1;
         
     }
     .searchPage_filter {
-        margin-top: 60px;
+        margin-top: 2px;
         display: flex;
-        align-items: center;
-        color:#606060;
-        font-size: xx-small !important;
+        
     }
+    
 }

@@ -10,23 +10,15 @@
     display: flex;
     flex-wrap: wrap;
 }
-@media (max-width:768px) {
+@media (min-width:280px)and (max-width:768px) {
     .recommendedvideos{
-flex:0.9;
-padding-bottom: 5px;
-margin-top: 16px;
- box-sizing: border-box;
-     background-color: #f9f9f9;
-    padding: 40px 20px;
-    padding-bottom: 0;
-    }
+flex: 1;
+ }
     .recommendedvideos_video {
-        display: flex;
-        flex-wrap: wrap;
-        
-    }
+        display:flex;
+        flex-direction: column;
+       }
     .recommendedvideos > h1 {
-        margin-top:4px;
-        margin-bottom: 7px;
+        display: none;
     }
  }

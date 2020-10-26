@@ -32,10 +32,3 @@ font-size: large !important;
 .sidebarRow.selected > .sidebarR_title {
     font-weight: bold;
 }
-@media (max-width:768px) {
-    .sidebarRow{
-        margin-top: 5px;
-        margin-bottom: 15px;
-
-    }
- }

@@ -14,10 +14,10 @@ const SearchPage = () => {
                 <hr />
 
                 <ChannelRow
-                    image="https://yt3.ggpht.com/a/AATXAJywvBAXSKk4lvGxAR7FdgwbflfNUH994mGHlCwE=s176-c-k-c0x00ffffff-no-rj-mo"
+                   image="https://yt3.ggpht.com/a/AATXAJywvBAXSKk4lvGxAR7FdgwbflfNUH994mGHlCwE=s176-c-k-c0x00ffffff-no-rj-mo"
                     Channel="Code With Nobel"
                     verified
-                    subd="660k"
+                    subs="660k"
                     noofVideos={382}
                     description="Best Channel to learn  Web Development." />
                     <hr/>

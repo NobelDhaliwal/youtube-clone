@@ -9,10 +9,4 @@
     margin-top: 10px;
     margin-bottom: 10px;
 }
-@media (max-width:768px) {
-   .sidebar{
-    flex:0.1;
-    margin-top:50px;
-   }
-  
-}
+

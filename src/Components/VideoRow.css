@@ -33,21 +33,24 @@
     background-color: lightgray;
     padding: 2px;
 }
-@media (max-width:500px) {
+@media(min-width:280px) and (max-width:768px) {
     .videoRow {
-        margin:Auto;
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    
+    .videoRow > img {
+        object-fit: contain;
+        width: 100%;
+        height: auto;
     }
     .videoRow_text {
-        margin-top: 5px;
-        margin-bottom: 15px;
-        padding: 3px;
+        margin-top: 10px;
+        font-size: 25px;
     }
     .videoRow_headline {
         margin-top: 5px;
-    }
-    .videoRow > img {
-        object-fit: contain;
-        width: 200px;
-        height: 130px;
+        margin-bottom: 3px;
     }
 }

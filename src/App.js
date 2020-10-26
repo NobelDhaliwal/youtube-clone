@@ -5,6 +5,9 @@ import RecommendedVideos from "./Components/RecommendedVideos.jsx";
 import "./App.css";
 import SearchPage from "./Components/SearchPage.jsx";
 import {Switch,Route,BrowserRouter as Router} from "react-router-dom";
+import "./Components/Sidebar.css";
+import "./Components/VideoCard.css";
+import "./Components/Header.css";
 
 const App =()=> {
   return (
@@ -15,7 +18,7 @@ const App =()=> {
        <Switch>
         <Route path="/search/:searchTerm">
         <div className="App_page">
-       {/* <Sidebar/> */}
+       <Sidebar/>
       <SearchPage/> 
         </div>
         </Route>

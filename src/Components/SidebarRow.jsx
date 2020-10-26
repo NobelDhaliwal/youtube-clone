@@ -1,5 +1,4 @@
 import React from 'react'
-import HomeIcon from '@material-ui/icons/Home';
 import "./SidebarRow.css";
 const SidebarRow = (props) => {
     // with es6 object destructuring we can write {title} instead of props

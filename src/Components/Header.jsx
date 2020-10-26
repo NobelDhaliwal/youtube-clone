@@ -18,10 +18,12 @@ const Header = () => {
         <div className="header">
             <div className="header_left">
             
-                <MenuIcon />
+                <MenuIcon className="menu" />
                 {/* logo */}
                 {/* WE wrapped our logo with link so that 
                 when someone click it homepage open */}
+                {/* So far, our site is only navigable by typing the URLs. 
+                To add clickable links to the site, we use the Link element from React Router */}
                 <Link to="/">
                 <img
                     className="header_logo"
@@ -55,9 +57,11 @@ const Header = () => {
                 </span>
                 {/* Apps icon */}
                 <span className="disappear">
-                <AppsIcon className="header_icon1" />
+                <AppsIcon className="header_icon" />
                 </span>
+                <span className="disappear">
                 <NotificationsIcon className="header_icon" />
+                </span>
                 <Avatar
                     alt="Nobel"
                     src="https://avatars2.githubusercontent.com/u/70794984?s=400&u=5494bcd764543c41e52a2cd68973be47b31cb332&v=4" />
